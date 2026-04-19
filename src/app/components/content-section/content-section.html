@@ -1,0 +1,36 @@
+<section class="content-section py-5">
+    <div class="container">
+        <div class="row align-items-center" [class.flex-row-reverse]="reversible">
+            
+            <!-- Representación Visual -->
+            <div class="col-lg-6 d-flex justify-content-center mb-4 mb-lg-0">
+                
+                <!-- Caso Radar -->
+                @if (tipo === 'radar') {
+                    <div class="radar-container position-relative overflow-hidden rounded-circle">
+                        <div class="radar-circles"><span></span><span></span><span></span></div>
+                        <div class="radar-scan animate-radar-sweep"></div>
+                        <div class="user-center"></div>
+                    </div>
+                }
+
+                <!-- Caso Chat -->
+                @if (tipo === 'chat') {
+                    <div class="mock-chat d-flex flex-column gap-3 w-100 py-3">
+                        <div class="bubble received">Hola! Vi que te gusta el queso 🧀</div>
+                        <div class="bubble sent fw-semibold">Me encanta! Cuándo vamos por una pizza? 🍕</div>
+                        <div class="bubble received">Jaja me parece un planazo</div>
+                    </div>
+                }
+
+            </div>
+
+            <!-- Texto -->
+            <div class="col-lg-6 text-center text-lg-start">
+                <h2 class="display-4 fw-black text-white">{{ titulo }}</h2>
+                <p class="lead text-secondary">{{ descripcion }}</p>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,70 @@
+.radar-container {
+    width: 100%;
+    max-width: 320px;
+    aspect-ratio: 1/1;
+    background: radial-gradient(circle, rgba(20, 20, 20, 1) 0%, rgba(5, 5, 5, 1) 100%);
+    border: 2px solid rgba(255, 215, 0, 0.15);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.radar-circles span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(255, 215, 0, 0.08);
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.radar-scan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 0deg, rgba(255, 215, 0, 0.1) 60deg, rgba(255, 215, 0, 0.8) 90deg, transparent 90.1deg);
+}
+
+@keyframes radar-sweep {
+    from { transform: translate(-50%, -50%) rotate(0); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+.animate-radar-sweep { animation: radar-sweep 4s linear infinite; transform-origin: center center; }
+
+.user-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--primary);
+}
+
+.bubble {
+    padding: 18px 25px;
+    border-radius: 28px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    width: fit-content;
+    max-width: 90%;
+}
+
+.bubble.received {
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--glass-border);
+    align-self: flex-start;
+}
+
+.bubble.sent {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--bg-dark);
+    align-self: flex-end;
+}
