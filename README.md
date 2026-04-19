@@ -1,59 +1,21 @@
 # CheeseEnAngular
+Informe de Proyecto: Migración a Angular 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+Impacto TecnológicoEste informe detalla el proceso de transformación de nuestra plataforma web de una arquitectura estática a una arquitectura basada en componentes utilizando el framework Angular.
 
-## Development server
+  1. Investigación y Recopilación de ContenidoPara la migración, se ha realizado un análisis del contenido original para adaptarlo al patrón MVC (Modelo-Vista-Controlador) y a una arquitectura modular:Arquitectura de     Componentes:
+  2.  Se ha descompuesto la web en piezas independientes y reutilizables: Header, Hero, Section-Content y Footer.
+  3.  Gestión de Activos: Todos los recursos estáticos (imágenes de dispositivos, iconos de redes sociales y gráficos) se han centralizado en la carpeta public/ para una gestión eficiente de rutas en Angular.
+  4.  Fuentes y Referencias: Se han documentado las fuentes de datos sobre el impacto de la tecnología en jóvenes y los créditos de las imágenes utilizadas (Unsplash/Pexels), asegurando la integridad académica del proyecto.
+    
+  6.  Diseño Visual del Sitio WebEl diseño se ha orientado a ofrecer una experiencia de usuario (UX) inmersiva mediante una navegación de scroll vertical continuo.
+     
+  7.  Identidad Visual: Se mantiene una estética minimalista y clara, priorizando la legibilidad con fondos negros y bloques de colores amarillos sutiles para diferenciar las secciones. La paleta se basa en tonos     representativos de la aplicación
+     Tipografía: Se utiliza una fuente Sans-Serif (sin remates) moderna, que aporta un aspecto limpio y profesional, ideal para un sitio informativo sobre tecnología.
+     Estructura: Layout de scroll vertical continuo, donde la navegación guía al usuario a través de los diferentes bloques temáticos (móviles, redes sociales, videojuegos) de manera fluida.
 
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+  8.  Prototipado UI-UX: Se ha diseñado un flujo donde cada sección de contenido (Móviles, Redes Sociales, Videojuegos) ocupa el total del viewport ($100vh$), utilizando técnicas de scroll-snap para una transición suave entre secciones.
+  9.  Documentación: El boceto detallado de la interfaz se ha integrado en la documentación oficial de la 3ª Evaluación del módulo de Lenguajes de Marcas.3. Configuración del Entorno de TrabajoSe ha establecido un entorno de desarrollo profesional siguiendo los estándares de Angular:
+  10.  Estructura del Proyecto: Organización de carpetas basada en módulos, separando la lógica de negocio (services), las interfaces de datos (models) y la interfaz de usuario (components).
+  11.  Integración de Frameworks CSS: Se ha instalado y configurado Bootstrap mediante npm para gestionar el sistema de rejillas (grid) y asegurar que la web sea totalmente responsive.
+  12.  Adaptación de Código: Se ha procedido a la refactorización del HTML/CSS original, extrayendo estilos globales a styles.css y encapsulando estilos específicos dentro de sus respectivos componentes para evitar colisiones.
