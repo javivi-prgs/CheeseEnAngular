@@ -9,7 +9,11 @@ Impacto TecnológicoEste informe detalla el proceso de transformación de nuestr
   4.  Fuentes y Referencias: Se han documentado las fuentes de datos sobre el impacto de la tecnología en jóvenes y los créditos de las imágenes utilizadas (Unsplash/Pexels), asegurando la integridad académica del proyecto.
     
   6.  Diseño Visual del Sitio WebEl diseño se ha orientado a ofrecer una experiencia de usuario (UX) inmersiva mediante una navegación de scroll vertical continuo.
-  7.  Identidad Visual: Se mantiene una estética "Dark Tech" con una paleta de colores en tonos oscuros (#0f172a) y acentos en cian para resaltar la interactividad. La tipografía seleccionada es de corte sans-serif para maximizar la legibilidad.
+     
+  7.  Identidad Visual: Se mantiene una estética minimalista y clara, priorizando la legibilidad con fondos negros y bloques de colores amarillos sutiles para diferenciar las secciones. La paleta se basa en tonos     representativos de la aplicación
+     Tipografía: Se utiliza una fuente Sans-Serif (sin remates) moderna, que aporta un aspecto limpio y profesional, ideal para un sitio informativo sobre tecnología.
+     Estructura: Layout de scroll vertical continuo, donde la navegación guía al usuario a través de los diferentes bloques temáticos (móviles, redes sociales, videojuegos) de manera fluida.
+
   8.  Prototipado UI-UX: Se ha diseñado un flujo donde cada sección de contenido (Móviles, Redes Sociales, Videojuegos) ocupa el total del viewport ($100vh$), utilizando técnicas de scroll-snap para una transición suave entre secciones.
   9.  Documentación: El boceto detallado de la interfaz se ha integrado en la documentación oficial de la 3ª Evaluación del módulo de Lenguajes de Marcas.3. Configuración del Entorno de TrabajoSe ha establecido un entorno de desarrollo profesional siguiendo los estándares de Angular:
   10.  Estructura del Proyecto: Organización de carpetas basada en módulos, separando la lógica de negocio (services), las interfaces de datos (models) y la interfaz de usuario (components).
