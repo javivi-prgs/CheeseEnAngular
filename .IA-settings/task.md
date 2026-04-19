@@ -1,5 +1,17 @@
 📋 Plan de Trabajo: Migración a Angular (CheeseEnAngular)
 
+
+
+
+Cada vez que hayas modificado algo quiero que me modifiques el archivo .usoDeIA/logs.md y me pongas en un parrafo de maximo 4 lineas resumidamente que es lo que has modificado, también quiero que me pongas la fecha y la hora de la modificación. 
+El log seguirá el siguiente formato:
+
+## [Fecha y hora]
+
+[Descripción de la modificación]
+
+## ✅ Tareas Completadas
+
 Fase 1: Configuración del Entorno y EstructuraEsta fase es el "esqueleto" del proyecto. Sin esto, no podemos empezar a programar de forma organizada.
 
     [1] Inicialización del Proyecto: Crear el proyecto Angular y limpiar el contenido por defecto del app.component.html.
@@ -23,11 +35,3 @@ Fase 3: Implementación del Diseño y UI-UXEn este punto volcamos el diseño vis
     Migración de Contenido:
     [9] Repartir los textos e imágenes del proyecto original dentro de los nuevos componentes de Angular.
     [10] Encapsulamiento de Estilos: Mover el CSS específico de cada sección a su propio archivo .css de componente para evitar conflictos.
-
-
-Cada vez que hayas modificado algo quiero que me modifiques el archivo .usoDeIA/logs.md y me pongas en un parrafo de maximo 4 lineas resumidamente que es lo que has modificado, también quiero que me pongas la fecha y la hora de la modificación. 
-El log seguirá el siguiente formato:
-
-## [Fecha y hora]
-
-[Descripción de la modificación]
