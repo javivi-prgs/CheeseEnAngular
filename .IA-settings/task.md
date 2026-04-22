@@ -1,5 +1,6 @@
 📋 Plan de Trabajo: Migración a Angular (CheeseEnAngular)
-
+ [1] Quiero que hagas el componente de navbar como esta imagen: ![alt text](image.png)
+ [2] Quiero que hagas el componente de hero como esta imagen: ![alt text](image-1.png), el movil tiene que tener una animacion de ondas de dentro hacia afuera.
 
 
 
