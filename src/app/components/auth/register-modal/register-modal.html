@@ -1,0 +1,27 @@
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content auth-modal">
+      <div class="modal-header border-0">
+        <h5 class="modal-title fw-bold" id="registerModalLabel">Crear Cuenta</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form (submit)="onSubmit($event)">
+          <div class="mb-3">
+            <label for="regName" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="regName" placeholder="Tu nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="regEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="regEmail" placeholder="nombre@ejemplo.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="regPassword" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="regPassword" placeholder="********" required>
+          </div>
+          <button type="submit" class="btn btn-auth-submit w-100 mt-3">Registrarse</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+.footer {
+    border-top: 2px solid var(--primary) !important;
+}
+
+p {
+    font-family: var(--font-main);
+    letter-spacing: 0.5px;
+}

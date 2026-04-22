@@ -1,31 +1,67 @@
 .custom-navbar {
     background: var(--bg-dark) !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 1rem 0;
+    border-bottom: 2px solid var(--primary) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    padding: 0.8rem 0;
     transition: var(--transition);
+}
+
+.nav-logo {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
 }
 
 .brand-name {
     letter-spacing: -0.5px;
+    font-family: var(--font-main);
 }
 
 .nav-link {
-    color: rgba(255, 255, 255, 0.7) !important;
+    color: #ffffff !important;
     font-weight: 500;
+    font-size: 1.05rem;
+    padding: 0.5rem 1rem !important;
     transition: var(--transition);
 }
 
 .nav-link:hover {
     color: var(--primary) !important;
+    transform: translateY(-2px);
+}
+
+.btn-auth {
+    background-color: var(--primary) !important;
+    color: var(--bg-dark) !important;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-auth:hover {
+    transform: scale(1.1);
+    background-color: var(--primary-dark) !important;
 }
 
 /* Ajustes para móvil */
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
     .navbar-collapse {
-        background: var(--bg-dark) !important;
-        padding: 20px;
-        border-radius: 0 0 1rem 1rem;
-        border-top: 1px solid var(--glass-border) !important;
+        background: var(--bg-dark);
+        padding: 1.5rem;
+        margin-top: 0.5rem;
+        border-radius: 1rem;
+        border: 1px solid var(--primary);
+    }
+    
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .btn-auth, .btn-cheese {
+        width: 100%;
     }
 }

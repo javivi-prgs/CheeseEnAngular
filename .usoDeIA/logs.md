@@ -43,3 +43,15 @@ ARCHIVO DE LOGS DE CheeseEnAngular: Aquí podrás ver todas las modificaciones q
 ## [2026-04-22 14:05]
 
 **Instalación de Frameworks:** Se han instalado todas las dependencias del proyecto mediante `npm install`. Adicionalmente, se han incorporado los frameworks `bootstrap-icons` y `animate.css` para soportar iconos y animaciones avanzadas, configurándolos correctamente en el archivo `angular.json` para su uso global.
+
+## [2026-04-22 16:07]
+
+Se ha rediseñado el Navbar (Tarea 1) para incluir un borde inferior amarillo y sombras, ajustando el logo y los estilos de navegación. Se han añadido los botones de "Iniciar Sesión" y "Registrarse" (Tarea 9) con fondos amarillos y un efecto de aumento de tamaño al pasar el cursor.
+
+## [2026-04-22 16:10]
+
+Se han implementado los componentes `RegisterModal` (Tarea 10) y `LoginModal` (Tarea 11) como componentes Standalone. Ambos incluyen validaciones básicas, cierre automático tras el envío y un mensaje de éxito. Se han integrado en el `HeaderComponent` y se activan desde los botones correspondientes del Navbar.
+
+## [2026-04-22 16:12]
+
+Se ha creado el componente `Footer` (Tarea 7) siguiendo el diseño minimalista de la imagen de referencia con el texto centrado. Se ha integrado al final de la sección de descarga para que solo sea visible cuando el usuario alcanza el final de la página, manteniendo la coherencia con el diseño de modo oscuro y acentos amarillos.

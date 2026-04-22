@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-xl navbar-dark fixed-top custom-navbar">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-            <img src="/img/logo2.png" alt="Cheese Logo" class="nav-logo" style="width: 40px; height: 40px;">
-            <span class="brand-name fw-bold fs-4">Cheese</span>
+            <img src="/img/logo2.png" alt="Cheese Logo" class="nav-logo">
+            <span class="brand-name fw-bold fs-4 text-white">Cheese</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse p-3 p-xl-0 mt-2 mt-xl-0" id="navbarNav">
-            <ul class="navbar-nav ms-auto align-items-center gap-3 gap-xl-0">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center gap-3">
                 <li class="nav-item">
                     <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#planesModal">Planes</a>
                 </li>
@@ -19,10 +19,22 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contáctanos</a>
                 </li>
-                <li class="nav-item ms-xl-3 w-100 w-xl-auto">
-                    <a href="#download" class="btn btn-cheese rounded-pill px-4 w-100">Descargar</a>
+                <!-- Botones Auth (Tarea 9) -->
+                <li class="nav-item">
+                    <button class="btn btn-auth" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesión</button>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-auth" data-bs-toggle="modal" data-bs-target="#registerModal">Registrarse</button>
+                </li>
+                <!-- Botón Descargar (Tarea 1) -->
+                <li class="nav-item ms-xl-2">
+                    <a href="#download" class="btn btn-cheese rounded-pill px-4">Descargar</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
+
+<!-- Modales de Autenticación -->
+<app-register-modal></app-register-modal>
+<app-login-modal></app-login-modal>
