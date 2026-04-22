@@ -40,8 +40,6 @@ ARCHIVO DE LOGS DE CheeseEnAngular: Aquí podrás ver todas las modificaciones q
 
 **Finalización de la Fase 4:** Se completó la migración de los componentes `Hero`, `ContentSection` y `Footer`. El `ContentSection` se transformó en un componente dinámico y reutilizable mediante `@Input`. Se encapsularon todas las animaciones (`drip-sway`, `radar-sweep`, etc.) dentro de sus respectivos componentes. La SPA ya muestra el contenido real de la web original con el efecto Scroll-Snap activo.
 
+## [2026-04-22 14:05]
 
-
-
-
-
+**Instalación de Frameworks:** Se han instalado todas las dependencias del proyecto mediante `npm install`. Adicionalmente, se han incorporado los frameworks `bootstrap-icons` y `animate.css` para soportar iconos y animaciones avanzadas, configurándolos correctamente en el archivo `angular.json` para su uso global.
