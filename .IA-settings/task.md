@@ -1,7 +1,15 @@
 📋 Plan de Trabajo: Migración a Angular (CheeseEnAngular)
- [1] Quiero que hagas el componente de navbar como esta imagen: ![alt text](image.png)
- [2] Quiero que hagas el componente de hero como esta imagen: ![alt text](image-1.png), el movil tiene que tener una animacion de ondas de dentro hacia afuera.
-
+ [1] Quiero que hagas el componente llamado navbar como esta imagen: ![alt text](image.png)
+ [2] Quiero que hagas el componente llamado hero como esta imagen: ![alt text](image-1.png), el movil tiene que tener una animacion de ondas de dentro hacia afuera.
+ [3] Quiero que hagas un componente llamado funciones como esta imagen: ![alt text](image-2.png), quiero que el radar tenga una animacion de rotacion en bucle.
+ [4] Quiero que hagas un componente llamado funcionamiento como esta imagen: ![alt text](image-3.png), quiero que al pasar el cursor sobre una caja haga un efecto de zoom suave y borde de la caja amarillo. 
+ [5] Quiero que hagas un componente llamado vistazo como esta imagen: ![alt text](image-4.png), quiero que al pasar el cursor por un movil se haga un pequeño zoom, las fotos las pondré manualmente.
+ [6] Quiero que hagas dos componentes, el primero llamado etiqueta-planes y el segundo llamado etiqueta-descarga ![alt text](image-5.png), etiqueta-planes será la caja donde esta ubicada el boton de "Ver Planes" y etiqueta-descarga será la caja donde esta ubicada el boton de "Descargar Ahora".
+ [7] Quiero que hagas un componente llamado footer como esta imagen: ![alt text](image-6.png), el footer solo tiene que aparecer cuando la persona llegue al final de la web.
+ [8] Quiero que me hagas un componente llamado planes como esta imagen: ![alt text](image-7.png), es una ventana flotante que aparecerá al darle al boton de "Ver Planes" del componente etiqueta-planes y tambien se abrirá al darle al boton de "Planes" del navbar. Cuando se le de a la X se cerrará. Al pasar por el cursor de algún plan se hará un zoom suave y el borde amarillo.
+ 
+ 
+ 
 
 
 Cada vez que hayas modificado algo quiero que me modifiques el archivo .usoDeIA/logs.md y me pongas en un parrafo de maximo 4 lineas resumidamente que es lo que has modificado, también quiero que me pongas la fecha y la hora de la modificación. 
