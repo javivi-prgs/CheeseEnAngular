@@ -8,6 +8,8 @@ import { FuncionesComponent } from './components/funciones/funciones.component';
 import { VistazoComponent } from './components/vistazo/vistazo.component';
 import { FuncionamientoComponent } from './components/funcionamiento/funcionamiento';
 import { PlanesComponent } from './components/planes/planes';
+import { DownloadSection } from "./components/download-section/download-section";
+import { PromoPremium } from "./components/promo-premium/promo-premium";
 
 @Component({
   selector: 'app-root',
@@ -21,7 +23,9 @@ import { PlanesComponent } from './components/planes/planes';
     FuncionamientoComponent,
     PlanesComponent,
     VistazoComponent,
-    FooterComponent
+    FooterComponent,
+    DownloadSection,
+    PromoPremium
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

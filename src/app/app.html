@@ -2,7 +2,7 @@
 <app-header></app-header>
 
 <main class="snap-container">
-    
+
     <!-- 1. Hero Section -->
     <section class="snap-section">
         <app-hero></app-hero>
@@ -13,50 +13,16 @@
         <app-funciones></app-funciones>
     </section>
 
-    <!-- 3. Funcionamiento Section -->
-    <section class="snap-section" id="funcionamiento">
-        <app-funcionamiento></app-funcionamiento>
-    </section>
+    <!-- 4. Promo Premium Section -->
+    <app-promo-premium></app-promo-premium>
 
-    <!-- 4. Vistazo Section -->
+    <!-- 5. Vistazo Section -->
     <section class="snap-section" id="vistazo">
         <app-vistazo></app-vistazo>
     </section>
 
-    <!-- 5. Download Section -->
-    <section class="snap-section d-flex flex-column" id="download">
-        <div class="container text-center py-5 my-auto">
-            <h2 class="display-4 fw-black mb-3 text-white">¿Listo para derretirte?</h2>
-            <p class="lead mb-5 text-white-50">Descarga Cheese hoy mismo y empieza a conectar.</p>
-            <div>
-                <button class="btn btn-cheese btn-lg px-5 shadow-lg">Descargar Ahora</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- 6. Promo Premium Section (Moved to the end and beautified) -->
-    <section class="snap-section d-flex align-items-center" id="planes" 
-             style="background: radial-gradient(circle at 50% 100%, rgba(255, 215, 0, 0.15) 0%, #0a0a0a 80%); min-height: 80vh;">
-        <div class="container text-center py-5">
-            <div class="premium-box p-5 rounded-5 border border-primary border-opacity-25 bg-black bg-opacity-50 backdrop-blur">
-                <span class="badge bg-primary text-dark px-3 py-2 rounded-pill mb-4 fw-bold">NIVEL PREMIER</span>
-                <h2 class="display-3 fw-bold mb-4 text-white">🧀 Cheese <span class="text-primary">Gold</span> y <span class="text-warning">Platinum</span></h2>
-                <p class="lead mb-5 text-white-50 mx-auto" style="max-width: 800px; font-size: 1.4rem;">
-                    Pásate al lado dorado de la fuerza. <br>
-                    <strong>Likes ilimitados</strong>, descubre quién te admira y <strong>rebobina</strong> tus decisiones con un solo toque.
-                </p>
-                <button class="btn btn-cheese btn-lg px-5 py-3 fs-4 shadow-lg" data-bs-toggle="modal" data-bs-target="#planesModal">
-                    Ver Todos los Planes
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <app-footer></app-footer>
+    <app-download-section></app-download-section>
 
 </main>
 
 <router-outlet />
-
-<!-- Modal de Planes -->
-<app-planes></app-planes>
