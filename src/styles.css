@@ -73,6 +73,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* --- UTILIDADES --- */
+.text-primary { color: var(--primary) !important; }
+.bg-primary { background-color: var(--primary) !important; }
+.border-primary { border-color: var(--primary) !important; }
+.text-platinum { color: #00d4ff !important; } /* Platinum Blue */
+
 .btn-cheese {
     background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
     border: none;
