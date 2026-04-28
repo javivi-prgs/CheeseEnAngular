@@ -18,33 +18,41 @@
         <app-funcionamiento></app-funcionamiento>
     </section>
 
-    <!-- 4. Promo Premium Section -->
-    <section class="snap-section" id="planes" style="background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.1) 0%, #0a0a0a 100%);">
-        <div class="container text-center">
-            <h2 class="display-3 fw-black mb-4">🧀 Cheese Gold y Platinum</h2>
-            <p class="lead mb-5 text-white-50 mx-auto" style="max-width: 700px;">
-                Pásate al lado dorado. Likes ilimitados, ve a quién le gustas y rebobina si te equivocaste.
-            </p>
-            <button class="btn btn-cheese px-5 py-3" data-bs-toggle="modal" data-bs-target="#planesModal">Ver Planes</button>
-        </div>
-    </section>
-
-    <!-- 5. Vistazo Section -->
+    <!-- 4. Vistazo Section -->
     <section class="snap-section" id="vistazo">
         <app-vistazo></app-vistazo>
     </section>
 
-    <!-- 5. Download Section + Footer -->
+    <!-- 5. Download Section -->
     <section class="snap-section d-flex flex-column" id="download">
-        <div class="container text-center flex-grow-1 d-flex flex-column justify-content-center">
+        <div class="container text-center py-5 my-auto">
             <h2 class="display-4 fw-black mb-3 text-white">¿Listo para derretirte?</h2>
             <p class="lead mb-5 text-white-50">Descarga Cheese hoy mismo y empieza a conectar.</p>
             <div>
-                <button class="btn btn-cheese btn-lg px-5">Descargar Ahora</button>
+                <button class="btn btn-cheese btn-lg px-5 shadow-lg">Descargar Ahora</button>
             </div>
         </div>
-        <app-footer></app-footer>
     </section>
+
+    <!-- 6. Promo Premium Section (Moved to the end and beautified) -->
+    <section class="snap-section d-flex align-items-center" id="planes" 
+             style="background: radial-gradient(circle at 50% 100%, rgba(255, 215, 0, 0.15) 0%, #0a0a0a 80%); min-height: 80vh;">
+        <div class="container text-center py-5">
+            <div class="premium-box p-5 rounded-5 border border-primary border-opacity-25 bg-black bg-opacity-50 backdrop-blur">
+                <span class="badge bg-primary text-dark px-3 py-2 rounded-pill mb-4 fw-bold">NIVEL PREMIER</span>
+                <h2 class="display-3 fw-bold mb-4 text-white">🧀 Cheese <span class="text-primary">Gold</span> y <span class="text-warning">Platinum</span></h2>
+                <p class="lead mb-5 text-white-50 mx-auto" style="max-width: 800px; font-size: 1.4rem;">
+                    Pásate al lado dorado de la fuerza. <br>
+                    <strong>Likes ilimitados</strong>, descubre quién te admira y <strong>rebobina</strong> tus decisiones con un solo toque.
+                </p>
+                <button class="btn btn-cheese btn-lg px-5 py-3 fs-4 shadow-lg" data-bs-toggle="modal" data-bs-target="#planesModal">
+                    Ver Todos los Planes
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <app-footer></app-footer>
 
 </main>
 

@@ -17,9 +17,10 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100%;
     background-color: var(--bg-dark);
-    overflow: hidden; /* Evita la doble barra de desplazamiento */
+    overflow-x: hidden; /* Evita scroll horizontal */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,33 +29,47 @@ body {
 }
 
 /* --- SCROLL SNAP --- */
-.snap-container {
-    height: 100vh;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    scrollbar-width: thin; /* Firefox */
-    scrollbar-color: var(--primary) transparent; /* Firefox */
+/* --- SCROLL STYLES --- */
+body::-webkit-scrollbar {
+    width: 8px;
 }
 
-/* Chrome, Edge, Safari */
-.snap-container::-webkit-scrollbar {
-    width: 6px;
+body::-webkit-scrollbar-track {
+    background: var(--bg-dark);
 }
 
-.snap-container::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.snap-container::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: var(--primary);
     border-radius: 20px;
 }
 
+.snap-container {
+    min-height: 100vh;
+}
+
 .snap-section {
-    height: 100vh;
-    scroll-snap-align: start;
+    min-height: 100vh;
     position: relative;
-    display: block; /* Cambiado de flex para evitar problemas de centrado inicial */
+    display: block;
+}
+
+/* --- PREMIER PROMO STYLES --- */
+.premium-box {
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.05);
+    transition: var(--transition);
+}
+
+.premium-box:hover {
+    box-shadow: 0 0 70px rgba(255, 215, 0, 0.1);
+    border-color: rgba(255, 215, 0, 0.5) !important;
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(20px);
+}
+
+.fw-black {
+    font-weight: 900;
 }
 
 /* --- UTILIDADES --- */

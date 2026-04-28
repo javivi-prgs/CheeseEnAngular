@@ -5,49 +5,68 @@
 .radar-container {
     width: 300px;
     height: 300px;
-    background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
+    background: #050505;
     border-radius: 50%;
-    border: 2px solid rgba(255, 215, 0, 0.1);
+    border: 2px solid rgba(255, 215, 0, 0.2);
     overflow: hidden;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.05);
 }
 
-.radar-bg {
+.radar-grid {
     position: absolute;
     inset: 0;
     background-image: 
-        radial-gradient(circle, transparent 30%, rgba(255, 215, 0, 0.05) 31%, rgba(255, 215, 0, 0.05) 32%, transparent 33%),
-        radial-gradient(circle, transparent 60%, rgba(255, 215, 0, 0.05) 61%, rgba(255, 215, 0, 0.05) 62%, transparent 63%);
+        radial-gradient(circle, transparent 0%, transparent 25%, rgba(255, 215, 0, 0.1) 26%, transparent 27%, transparent 50%, rgba(255, 215, 0, 0.1) 51%, transparent 52%, transparent 75%, rgba(255, 215, 0, 0.1) 76%, transparent 77%),
+        linear-gradient(to right, rgba(255, 215, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 215, 0, 0.05) 1px, transparent 1px);
+    background-size: 100% 100%, 50% 50%, 50% 50%;
+    background-position: center;
 }
 
 .radar-sweep {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-    background: conic-gradient(from 0deg, var(--primary) 0%, transparent 25%);
-    transform-origin: top left;
+    inset: -50%;
+    background: conic-gradient(from 0deg, var(--primary) 0%, transparent 20%, transparent 100%);
     animation: radar-rotate 4s linear infinite;
-    opacity: 0.6;
+    opacity: 0.4;
+    filter: blur(4px);
+    transform-origin: center center;
 }
 
 .radar-center {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     background: var(--primary);
     border-radius: 50%;
-    box-shadow: 0 0 15px var(--primary);
-    z-index: 2;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px var(--primary);
+    z-index: 10;
+}
+
+.radar-blip {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--primary);
+    border-radius: 50%;
+    opacity: 0;
+    animation: blip-fade 4s infinite;
 }
 
 @keyframes radar-rotate {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
+}
+
+@keyframes blip-fade {
+    0%, 20% { opacity: 0; transform: scale(1); }
+    25% { opacity: 1; transform: scale(1.2); }
+    50% { opacity: 0; transform: scale(0.8); }
+    100% { opacity: 0; }
 }
 
 .chat-bubble {

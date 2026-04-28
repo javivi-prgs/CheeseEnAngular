@@ -73,4 +73,16 @@ Se ha creado el componente `Footer` (Tarea 7) siguiendo el diseño minimalista d
 
 ## [2026-04-28 09:52]
 
-**Corrección de UI - Doble Scrollbar:** Se ha eliminado la doble barra de desplazamiento lateral configurando `overflow: hidden` en el `html` y `body`. Además, se ha personalizado la barra de desplazamiento del contenedor principal para que sea más fina (6px) y de color amarillo, mejorando la estética premium.
+**Corrección de UI - Scroll y Barra de Desplazamiento:** Se ha eliminado la doble barra lateral y se ha personalizado la principal (fina y amarilla). Se ha añadido `scroll-behavior: smooth` para asegurar que el desplazamiento entre secciones sea fluido y controlado.
+
+## [2026-04-28 10:03]
+
+**Restauración de Scroll Global:** Se ha revertido el bloqueo de scroll en el `body` para permitir la navegación normal por toda la página. Se ha trasladado la personalización de la barra de desplazamiento (fina y amarilla) directamente al `body`, eliminando la necesidad de un contenedor con scroll interno.
+
+## [2026-04-28 10:07]
+
+**Corrección de Colores y Layout en Planes:** Se han ajustado los colores del modal para que todo el texto sea blanco y amarillo corporativo. El distintivo "MÁS POPULAR" se ha movido fuera de la caja del plan Gold (en la parte superior externa) para evitar solapamientos y mejorar el impacto visual, eliminando también los rellenos innecesarios.
+
+## [2026-04-28 10:14]
+
+**Rediseño del Radar de Funciones:** Se ha reconstruido el radar del componente `Funciones` para que coincida con la estética premium. Se ha añadido una rejilla de coordenadas (`radar-grid`), un haz de luz con desenfoque (`filter: blur`) y "blips" animados que simulan usuarios detectados, logrando un efecto mucho más realista y profesional.
