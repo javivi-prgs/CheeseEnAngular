@@ -86,3 +86,7 @@ Se ha creado el componente `Footer` (Tarea 7) siguiendo el diseño minimalista d
 ## [2026-04-28 10:14]
 
 **Rediseño del Radar de Funciones:** Se ha reconstruido el radar del componente `Funciones` para que coincida con la estética premium. Se ha añadido una rejilla de coordenadas (`radar-grid`), un haz de luz con desenfoque (`filter: blur`) y "blips" animados que simulan usuarios detectados, logrando un efecto mucho más realista y profesional.
+
+## [2026-04-28 11:23]
+
+**Restauración de Componentes Perdidos:** Se han vuelto a integrar los componentes `Planes`, `Funcionamiento` y `Footer` en el `app.html` principal. Al parecer, durante una reestructuración o integración de cambios de terceros, estas etiquetas se habían eliminado, provocando que el modal de planes no se mostrara y faltaran secciones clave de la web.
