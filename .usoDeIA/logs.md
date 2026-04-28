@@ -70,3 +70,7 @@ Se ha creado el componente `Footer` (Tarea 7) siguiendo el diseño minimalista d
 ## [2026-04-28 09:44]
 
 **Tarea [4] y [8] - Funcionamiento y Planes:** Se han implementado los componentes `Funcionamiento` y `Planes`. El primero explica el flujo de la app con tarjetas que tienen efectos de zoom y borde amarillo al pasar el cursor. El segundo es una ventana modal que muestra los planes de suscripción (Gratis, Gold, Platinum) con efectos interactivos y se activa desde el Navbar y la sección de promoción premium.
+
+## [2026-04-28 09:52]
+
+**Corrección de UI - Doble Scrollbar:** Se ha eliminado la doble barra de desplazamiento lateral configurando `overflow: hidden` en el `html` y `body`. Además, se ha personalizado la barra de desplazamiento del contenedor principal para que sea más fina (6px) y de color amarillo, mejorando la estética premium.

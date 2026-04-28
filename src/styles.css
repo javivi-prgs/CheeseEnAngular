@@ -19,6 +19,7 @@ html, body {
     padding: 0;
     height: 100%;
     background-color: var(--bg-dark);
+    overflow: hidden; /* Evita la doble barra de desplazamiento */
 }
 
 body {
@@ -31,6 +32,22 @@ body {
     height: 100vh;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: var(--primary) transparent; /* Firefox */
+}
+
+/* Chrome, Edge, Safari */
+.snap-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.snap-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.snap-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    border-radius: 20px;
 }
 
 .snap-section {
