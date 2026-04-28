@@ -1,0 +1,44 @@
+.funcionamiento-section {
+    background-color: var(--bg-dark);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.feature-card {
+    background: var(--bg-card);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    border-color: var(--primary);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+}
+
+.number-box {
+    width: 60px;
+    height: 60px;
+    background: var(--primary);
+    color: var(--bg-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+h2 {
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+
+h2::first-letter {
+    text-transform: uppercase;
+}

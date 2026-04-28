@@ -66,3 +66,7 @@ Se ha creado el componente `Footer` (Tarea 7) siguiendo el diseño minimalista d
 ## [2026-04-28 09:08]
 
 **Tarea [5] - Componente Vistazo:** Se ha creado el componente `Vistazo` que muestra 4 capturas de la aplicación dentro de mockups de móviles. Se ha añadido un efecto de zoom suave y cambio de color de borde al pasar el cursor sobre cada terminal.
+
+## [2026-04-28 09:44]
+
+**Tarea [4] y [8] - Funcionamiento y Planes:** Se han implementado los componentes `Funcionamiento` y `Planes`. El primero explica el flujo de la app con tarjetas que tienen efectos de zoom y borde amarillo al pasar el cursor. El segundo es una ventana modal que muestra los planes de suscripción (Gratis, Gold, Platinum) con efectos interactivos y se activa desde el Navbar y la sección de promoción premium.

@@ -1,0 +1,51 @@
+.modal-content {
+    background: linear-gradient(145deg, #0f0f0f 0%, #1a1a1a 100%) !important;
+    border-radius: 30px !important;
+}
+
+.plan-card {
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.03) !important;
+    transition: var(--transition);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    border-color: var(--primary) !important;
+    box-shadow: 0 15px 40px rgba(255, 215, 0, 0.15);
+}
+
+.plan-card.highlight {
+    border-color: var(--primary) !important;
+    background: rgba(255, 215, 0, 0.05) !important;
+}
+
+.popular-badge {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: var(--bg-dark);
+    padding: 4px 15px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 800;
+    z-index: 10;
+}
+
+.price .display-3 {
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.bi-check2-circle {
+    font-size: 1.2rem;
+}
+
+/* Glassmorphism for the modal backdrop */
+.modal-backdrop.show {
+    opacity: 0.85;
+    backdrop-filter: blur(10px);
+}
