@@ -11,6 +11,7 @@ import { PlanesComponent } from './components/planes/planes';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [
     RouterOutlet,
     HeaderComponent,
