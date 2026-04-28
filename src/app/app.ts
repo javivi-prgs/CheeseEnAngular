@@ -4,6 +4,8 @@ import { HeaderComponent } from './components/header/header';
 import { HeroComponent } from './components/hero/hero';
 import { ContentSectionComponent } from './components/content-section/content-section';
 import { FooterComponent } from './components/footer/footer';
+import { FuncionesComponent } from './components/funciones/funciones.component';
+import { VistazoComponent } from './components/vistazo/vistazo.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +14,8 @@ import { FooterComponent } from './components/footer/footer';
     HeaderComponent,
     HeroComponent,
     ContentSectionComponent,
+    FuncionesComponent,
+    VistazoComponent,
     FooterComponent
   ],
   templateUrl: './app.html',

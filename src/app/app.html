@@ -8,23 +8,9 @@
         <app-hero></app-hero>
     </section>
 
-    <!-- 2. Radar Section -->
+    <!-- 2. Funciones Section (Radar + Chat) -->
     <section class="snap-section" id="features">
-        <app-content-section 
-            titulo="Radar del Amor 📡" 
-            descripcion="Define tu radio en kilómetros y mira quién está cerca en tiempo real." 
-            tipo="radar">
-        </app-content-section>
-    </section>
-
-    <!-- 3. Chat Section -->
-    <section class="snap-section">
-        <app-content-section 
-            titulo="Chat al Instante 💬" 
-            descripcion="Si hay match, la conversación fluye. Sin esperas, directo al grano." 
-            tipo="chat"
-            [reversible]="true">
-        </app-content-section>
+        <app-funciones></app-funciones>
     </section>
 
     <!-- 4. Promo Premium Section -->
@@ -36,6 +22,11 @@
             </p>
             <button class="btn btn-cheese px-5 py-3">Ver Planes</button>
         </div>
+    </section>
+
+    <!-- 5. Vistazo Section -->
+    <section class="snap-section" id="vistazo">
+        <app-vistazo></app-vistazo>
     </section>
 
     <!-- 5. Download Section + Footer -->

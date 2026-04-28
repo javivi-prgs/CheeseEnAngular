@@ -55,3 +55,14 @@ Se han implementado los componentes `RegisterModal` (Tarea 10) y `LoginModal` (T
 ## [2026-04-22 16:12]
 
 Se ha creado el componente `Footer` (Tarea 7) siguiendo el diseño minimalista de la imagen de referencia con el texto centrado. Se ha integrado al final de la sección de descarga para que solo sea visible cuando el usuario alcanza el final de la página, manteniendo la coherencia con el diseño de modo oscuro y acentos amarillos.
+## [2026-04-28 09:04]
+
+**Tarea [2] - Refinamiento del Componente Hero:** Se ha actualizado el componente Hero para coincidir con el diseño de referencia. Se ha implementado una animación de ondas expansivas en el mockup del móvil ("pulse-ripple") y se ha ajustado el estilo del botón "Explorando..." y el marcador de usuario, manteniendo la estética Dark Mode con acentos amarillos.
+
+## [2026-04-28 09:07]
+
+**Tarea [3] - Componente Funciones:** Se ha implementado el componente `Funciones` que agrupa las características de "Radar del Amor" y "Chat al Instante". Se ha incluido una animación de rotación continua para el radar y un diseño de burbujas de chat responsivo.
+
+## [2026-04-28 09:08]
+
+**Tarea [5] - Componente Vistazo:** Se ha creado el componente `Vistazo` que muestra 4 capturas de la aplicación dentro de mockups de móviles. Se ha añadido un efecto de zoom suave y cambio de color de borde al pasar el cursor sobre cada terminal.
