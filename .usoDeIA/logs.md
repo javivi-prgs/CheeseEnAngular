@@ -102,3 +102,7 @@ Se ha creado el componente `Footer` (Tarea 7) siguiendo el diseño minimalista d
 ## [2026-04-29 12:16]
 
 **Corrección de UI - Eliminación de Footer Duplicado:** Se ha detectado que el `FooterComponent` se estaba renderizando dos veces (una dentro de `DownloadSection` y otra en `app.html`). Se ha eliminado la instancia redundante de `app.html` y se han organizado los componentes modales (`Planes` y `Contacto`) fuera del contenedor principal de scroll para evitar conflictos visuales.
+
+## [2026-04-29 12:28]
+
+Se ha implementado la funcionalidad de descarga en el botón "Descargar Ahora" del componente `download-section`. Al hacer clic, se descarga el archivo `VirusDelQueso.txt` con un mensaje personalizado y se muestra una alerta informando al usuario de la "infección por el virus del queso".
