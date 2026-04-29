@@ -6,6 +6,7 @@ import { FooterComponent } from "../footer/footer";
   imports: [FooterComponent],
   templateUrl: './download-section.html',
   styleUrl: './download-section.css',
+  host: { 'class': 'w-100' }
 })
 export class DownloadSection {
   downloadVirus() {

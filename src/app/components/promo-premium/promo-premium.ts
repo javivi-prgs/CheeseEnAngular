@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './promo-premium.html',
   styleUrl: './promo-premium.css',
+  host: { 'class': 'w-100' }
 })
 export class PromoPremium {
 

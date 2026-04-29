@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './funciones.component.html',
   styleUrl: './funciones.component.css',
+  host: { 'class': 'w-100' }
 })
 export class FuncionesComponent {
 

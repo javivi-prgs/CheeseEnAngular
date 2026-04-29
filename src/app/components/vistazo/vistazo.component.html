@@ -3,10 +3,11 @@
         <h2 class="display-4 fw-black text-white">Un vistazo a la App</h2>
     </div>
 
-    <div class="container">
+    <!-- Desktop View: Grid -->
+    <div class="container d-none d-md-block">
         <div class="row g-4 justify-content-center">
             <!-- Screen 1: Perfil -->
-            <div class="col-6 col-md-3">
+            <div class="col-md-3">
                 <div class="phone-card">
                     <div class="phone-screen">
                         <img src="img/perfilsofia.png" alt="Perfil" class="img-fluid">
@@ -15,7 +16,7 @@
             </div>
 
             <!-- Screen 2: Radar -->
-            <div class="col-6 col-md-3">
+            <div class="col-md-3">
                 <div class="phone-card">
                     <div class="phone-screen">
                         <img src="img/radarsofia.png" alt="Radar" class="img-fluid">
@@ -24,7 +25,7 @@
             </div>
 
             <!-- Screen 3: Match -->
-            <div class="col-6 col-md-3">
+            <div class="col-md-3">
                 <div class="phone-card">
                     <div class="phone-screen">
                         <img src="img/matchsofia.png" alt="Match" class="img-fluid">
@@ -32,14 +33,64 @@
                 </div>
             </div>
 
-            <!-- Screen 4: Chat (Placeholder for user to update) -->
-            <div class="col-6 col-md-3">
+            <!-- Screen 4: Chat -->
+            <div class="col-md-3">
                 <div class="phone-card">
                     <div class="phone-screen">
                         <img src="img/sofia.png" alt="Chat" class="img-fluid">
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Mobile View: Carousel -->
+    <div class="container d-block d-md-none">
+        <div id="vistazoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#vistazoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#vistazoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#vistazoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#vistazoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="phone-card mx-auto">
+                        <div class="phone-screen">
+                            <img src="img/perfilsofia.png" alt="Perfil" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="phone-card mx-auto">
+                        <div class="phone-screen">
+                            <img src="img/radarsofia.png" alt="Radar" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="phone-card mx-auto">
+                        <div class="phone-screen">
+                            <img src="img/matchsofia.png" alt="Match" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="phone-card mx-auto">
+                        <div class="phone-screen">
+                            <img src="img/sofia.png" alt="Chat" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#vistazoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#vistazoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
     </div>
 </section>

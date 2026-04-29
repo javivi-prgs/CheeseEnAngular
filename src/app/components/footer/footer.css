@@ -1,5 +1,6 @@
 .footer {
     border-top: 2px solid var(--primary) !important;
+    width: 100%;
 }
 
 p {

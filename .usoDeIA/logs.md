@@ -110,3 +110,19 @@ Se ha implementado la funcionalidad de descarga en el botón "Descargar Ahora" d
 ## [2026-04-29 12:42]
 
 **Tarea [1] y [2] - Optimización de Espaciado y Vista Móvil:** Se ha rectificado el espaciado entre componentes estandarizando el contenedor `snap-section` con Flexbox para centrar el contenido verticalmente. Se han eliminado alturas redundantes (`min-vh-100`) y paddings excesivos en los componentes internos para reducir la separación visual. Además, se han implementado correctamente las propiedades de `scroll-snap` en el `body` y las secciones para garantizar una navegación magnética fluida y adaptada a dispositivos móviles.
+
+## [2026-04-29 13:05]
+
+**Tareas [1] y [2] - Carrusel Móvil y Ajustes Desktop:** Se ha implementado un carrusel de Bootstrap para la sección "Vistazo" en dispositivos móviles, manteniendo la cuadrícula en escritorio. Se ha corregido el solapamiento del Hero con el Navbar mediante `scroll-padding-top` y padding superior, y se ha ajustado el Footer para que ocupe todo el ancho y se visualice correctamente al final de la página.
+
+## [2026-04-29 13:08]
+
+**Corrección Estética del Hero:** Se ha eliminado un Navbar redundante que desplazaba el contenido. Se ha ajustado la altura y el espaciado del Hero, suavizando la rotación del mockup del móvil para evitar recortes visuales. Además, se ha optimizado el tamaño del "drip" de queso superior para lograr una integración más limpia con la navegación fija.
+
+## [2026-04-29 13:10]
+
+**Ajuste de Anchura y Visibilidad del Drip:** Se ha corregido un problema por el cual el goteo de queso no cubría todo el ancho de la pantalla en resoluciones altas. Se ha aplicado `background-size: 100% 100%` al SVG y se ha incrementado su altura para asegurar que sea claramente visible por debajo del Navbar fijo, manteniendo el efecto de "derretido" desde la parte superior.
+
+## [2026-04-29 13:14]
+
+**Corrección de Anchura en Desktop (Component Hosts):** Se ha identificado que los componentes de Angular no ocupaban el 100% del ancho del contenedor en escritorio debido a las propiedades de Flexbox del contenedor de secciones. Se ha forzado la anchura completa (`w-100`) en los hosts de todos los componentes principales (Hero, Funciones, Vistazo, etc.), garantizando que elementos como el goteo de queso se extiendan hasta los bordes laterales de la pantalla.

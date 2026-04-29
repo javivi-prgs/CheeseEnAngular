@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './vistazo.component.html',
   styleUrl: './vistazo.component.css',
+  host: { 'class': 'w-100' }
 })
 export class VistazoComponent {
 
