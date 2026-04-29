@@ -1,7 +1,9 @@
 📋 Plan de Trabajo: Migración a Angular (CheeseEnAngular)
 
-  [1] Quiero que en la vista movil el bloque de un vistazo a la app sea un carrusel con las 4 fotos que hay
-  [2] en desktop sale mal el hero, sale recortado y el footer tambien sale mal, arreglarlo
+  [1] Hacer el 404 que te redirija y te vas fuera del enlace
+  [2] hay que cambiar la carpeta models por common y hacer bien la esctructura de las coasas estaticas y no estaticas
+  [3] en el app.html dejar solo y dejar el router-outlet y en la carpeta pages crear la carpeta component y dentro de esa carpeta ,principal, en principal es donde va a estar toda la web por componentes y el router outlet tiene que importar todo ahi 
+  [4] crea archivos de ruta de configuracion y entrelazarlas y eso bro.
 
 Cada vez que hayas modificado algo quiero que me modifiques el archivo .usoDeIA/logs.md y me pongas en un parrafo de maximo 4 lineas resumidamente que es lo que has modificado, también quiero que me pongas la fecha y la hora de la modificación. 
 El log seguirá el siguiente formato:
