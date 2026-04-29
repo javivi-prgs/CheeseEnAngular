@@ -1,15 +1,7 @@
 📋 Plan de Trabajo: Migración a Angular (CheeseEnAngular)
 
-    [2] Quiero que hagas el componente llamado hero como esta imagen: ![alt text](image-1.png), el movil tiene que tener una animacion de ondas de dentro hacia afuera.
-    [3] Quiero que hagas un componente llamado funciones como esta imagen: ![alt text](image-2.png), quiero que el radar tenga una animacion de rotacion en bucle.
-    [4] Quiero que hagas un componente llamado funcionamiento como esta imagen: ![alt text](image-3.png), quiero que al pasar el cursor sobre una caja haga un efecto de zoom suave y borde de la caja amarillo. 
-    [5] Quiero que hagas un componente llamado vistazo como esta imagen: ![alt text](image-4.png), quiero que al pasar el cursor por un movil se haga un pequeño zoom, las fotos las pondré manualmente.
-    [6] Quiero que hagas dos componentes, el primero llamado etiqueta-planes y el segundo llamado etiqueta-descarga ![alt text](image-5.png), etiqueta-planes será la caja donde esta ubicada el boton de "Ver Planes" y etiqueta-descarga será la caja donde esta ubicada el boton de "Descargar Ahora".
-    [7] Quiero que hagas un componente llamado footer como esta imagen: ![alt text](image-6.png), el footer solo tiene que aparecer cuando la persona llegue al final de la web.
-    [8] Quiero que me hagas un componente llamado planes como esta imagen: ![alt text](image-7.png), es una ventana flotante que aparecerá al darle al boton de "Ver Planes" del componente etiqueta-planes y tambien se abrirá al darle al boton de "Planes" del navbar. Cuando se le de a la X se cerrará. Al pasar por el cursor de algún plan se hará un zoom suave y el borde amarillo.
+   [1] Crea la pagina de Contactanos con su respectivo componente, la página deberá de ser así: ![alt text](image-8.png).
    
-    
-    
 
 Cada vez que hayas modificado algo quiero que me modifiques el archivo .usoDeIA/logs.md y me pongas en un parrafo de maximo 4 lineas resumidamente que es lo que has modificado, también quiero que me pongas la fecha y la hora de la modificación. 
 El log seguirá el siguiente formato:
@@ -49,3 +41,10 @@ Visual:
     [9] Quiero que en el navbar me agregues un boton de "Iniciar Sesion" y "Registrarse".
     [10] Quiero que el boton iniciar sesion y registrarse tengan un color de fondo amarillo y un color de texto negro, cuando se les pase el cursor se haran mas grandes. Al darle al boton de registrarse se mostrará una ventana flotante con un formulario de registro, los campos seran nombre, email y contraseña. El formulario tendrá un boton de registrarse que al darle se cerrará la ventana y se mostrará un mensaje de "Usuario registrado correctamente". Los datos que el usuario pondrá en la ventana de registrarse o de iniciar sesion no se harán anda con ellos, los puedes olvidar.
     [11] Quiero que me crees una ventana flotante para iniciar sesion, se abrirá al darle al boton de iniciar sesion del navbar. Cuando se le de a la X se cerrará. Tiene un campo de email, un campo de contraseña y un boton de iniciar sesion que al darle se cerrará la ventana y se mostrará un mensaje de "Usuario registrado correctamente". Los datos que el usuario pondrá en la ventana de iniciar sesion no se harán anda con ellos, los puedes olvidar. 
+     [2] Quiero que hagas el componente llamado hero como esta imagen: ![alt text](image-1.png), el movil tiene que tener una animacion de ondas de dentro hacia afuera.
+    [3] Quiero que hagas un componente llamado funciones como esta imagen: ![alt text](image-2.png), quiero que el radar tenga una animacion de rotacion en bucle.
+    [4] Quiero que hagas un componente llamado funcionamiento como esta imagen: ![alt text](image-3.png), quiero que al pasar el cursor sobre una caja haga un efecto de zoom suave y borde de la caja amarillo. 
+    [5] Quiero que hagas un componente llamado vistazo como esta imagen: ![alt text](image-4.png), quiero que al pasar el cursor por un movil se haga un pequeño zoom, las fotos las pondré manualmente.
+    [6] Quiero que hagas dos componentes, el primero llamado etiqueta-planes y el segundo llamado etiqueta-descarga ![alt text](image-5.png), etiqueta-planes será la caja donde esta ubicada el boton de "Ver Planes" y etiqueta-descarga será la caja donde esta ubicada el boton de "Descargar Ahora".
+    [7] Quiero que hagas un componente llamado footer como esta imagen: ![alt text](image-6.png), el footer solo tiene que aparecer cuando la persona llegue al final de la web.
+    [8] Quiero que me hagas un componente llamado planes como esta imagen: ![alt text](image-7.png), es una ventana flotante que aparecerá al darle al boton de "Ver Planes" del componente etiqueta-planes y tambien se abrirá al darle al boton de "Planes" del navbar. Cuando se le de a la X se cerrará. Al pasar por el cursor de algún plan se hará un zoom suave y el borde amarillo.
