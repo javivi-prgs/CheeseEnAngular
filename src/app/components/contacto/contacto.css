@@ -1,0 +1,36 @@
+.custom-modal-bg {
+  background-color: #0f0f0f;
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.custom-input {
+  background-color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.1rem;
+  color: #333;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.custom-input:focus {
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+  border-color: var(--primary);
+  outline: none;
+}
+
+.custom-input::placeholder {
+  color: #999;
+}
+
+.shadow-glow {
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.shadow-glow:hover {
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
+  transform: translateY(-2px);
+}

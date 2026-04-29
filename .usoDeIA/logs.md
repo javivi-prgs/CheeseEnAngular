@@ -90,3 +90,15 @@ Se ha creado el componente `Footer` (Tarea 7) siguiendo el diseño minimalista d
 ## [2026-04-28 11:23]
 
 **Restauración de Componentes Perdidos:** Se han vuelto a integrar los componentes `Planes`, `Funcionamiento` y `Footer` en el `app.html` principal. Al parecer, durante una reestructuración o integración de cambios de terceros, estas etiquetas se habían eliminado, provocando que el modal de planes no se mostrara y faltaran secciones clave de la web.
+
+## [2026-04-29 12:08]
+
+**Tarea [1] - Creación de la página de Contáctanos:** Se ha implementado el componente `ContactoComponent` con un diseño Dark Mode premium. Incluye un formulario responsivo con campos para nombre, email, asunto y mensaje, utilizando una estética de bordes redondeados, fondos blancos para los inputs y un botón amarillo con efectos de brillo y elevación al pasar el cursor, siguiendo fielmente la referencia de diseño.
+
+## [2026-04-29 12:14]
+
+**Tarea [1] - Integración de Contáctanos como Modal:** Se ha transformado el componente `ContactoComponent` en una ventana modal de Bootstrap para mejorar la fluidez de la SPA. Se ha vinculado el enlace "Contáctanos" del `HeaderComponent` mediante los atributos `data-bs-toggle` y `data-bs-target`, permitiendo que el formulario aparezca de forma interactiva sin desplazamientos bruscos de scroll.
+
+## [2026-04-29 12:16]
+
+**Corrección de UI - Eliminación de Footer Duplicado:** Se ha detectado que el `FooterComponent` se estaba renderizando dos veces (una dentro de `DownloadSection` y otra en `app.html`). Se ha eliminado la instancia redundante de `app.html` y se han organizado los componentes modales (`Planes` y `Contacto`) fuera del contenedor principal de scroll para evitar conflictos visuales.

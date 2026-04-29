@@ -10,6 +10,7 @@ import { FuncionamientoComponent } from './components/funcionamiento/funcionamie
 import { PlanesComponent } from './components/planes/planes';
 import { DownloadSection } from "./components/download-section/download-section";
 import { PromoPremium } from "./components/promo-premium/promo-premium";
+import { ContactoComponent } from './components/contacto/contacto';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,8 @@ import { PromoPremium } from "./components/promo-premium/promo-premium";
     VistazoComponent,
     FooterComponent,
     DownloadSection,
-    PromoPremium
+    PromoPremium,
+    ContactoComponent
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',

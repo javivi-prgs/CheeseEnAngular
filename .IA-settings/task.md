@@ -1,7 +1,5 @@
 📋 Plan de Trabajo: Migración a Angular (CheeseEnAngular)
 
-   [1] Crea la pagina de Contactanos con su respectivo componente, la página deberá de ser así: ![alt text](image-8.png).
-   
 
 Cada vez que hayas modificado algo quiero que me modifiques el archivo .usoDeIA/logs.md y me pongas en un parrafo de maximo 4 lineas resumidamente que es lo que has modificado, también quiero que me pongas la fecha y la hora de la modificación. 
 El log seguirá el siguiente formato:
@@ -48,3 +46,4 @@ Visual:
     [6] Quiero que hagas dos componentes, el primero llamado etiqueta-planes y el segundo llamado etiqueta-descarga ![alt text](image-5.png), etiqueta-planes será la caja donde esta ubicada el boton de "Ver Planes" y etiqueta-descarga será la caja donde esta ubicada el boton de "Descargar Ahora".
     [7] Quiero que hagas un componente llamado footer como esta imagen: ![alt text](image-6.png), el footer solo tiene que aparecer cuando la persona llegue al final de la web.
     [8] Quiero que me hagas un componente llamado planes como esta imagen: ![alt text](image-7.png), es una ventana flotante que aparecerá al darle al boton de "Ver Planes" del componente etiqueta-planes y tambien se abrirá al darle al boton de "Planes" del navbar. Cuando se le de a la X se cerrará. Al pasar por el cursor de algún plan se hará un zoom suave y el borde amarillo.
+    [1] Crea la pagina de Contactanos con su respectivo componente, la página deberá de ser así: ![alt text](image-8.png).
