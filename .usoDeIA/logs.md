@@ -106,3 +106,7 @@ Se ha creado el componente `Footer` (Tarea 7) siguiendo el diseño minimalista d
 ## [2026-04-29 12:28]
 
 Se ha implementado la funcionalidad de descarga en el botón "Descargar Ahora" del componente `download-section`. Al hacer clic, se descarga el archivo `VirusDelQueso.txt` con un mensaje personalizado y se muestra una alerta informando al usuario de la "infección por el virus del queso".
+
+## [2026-04-29 12:42]
+
+**Tarea [1] y [2] - Optimización de Espaciado y Vista Móvil:** Se ha rectificado el espaciado entre componentes estandarizando el contenedor `snap-section` con Flexbox para centrar el contenido verticalmente. Se han eliminado alturas redundantes (`min-vh-100`) y paddings excesivos en los componentes internos para reducir la separación visual. Además, se han implementado correctamente las propiedades de `scroll-snap` en el `body` y las secciones para garantizar una navegación magnética fluida y adaptada a dispositivos móviles.
