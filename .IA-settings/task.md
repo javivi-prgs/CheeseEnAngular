@@ -1,8 +1,7 @@
 📋 Plan de Trabajo: Migración a Angular (CheeseEnAngular)
 
-[1] Quiero que me rectifiques los padding/espacios entre componente y componente para que quede mejor visualmente y no quede tan separado.
-
-[2] Quiero que verifiques si se ve bien la pagina web desde vista movil y si esta todo en funcionamiento.
+  [1] Quiero que en la vista movil el bloque de un vistazo a la app sea un carrusel con las 4 fotos que hay
+  [2] en desktop sale mal el hero, sale recortado y el footer tambien sale mal, arreglarlo
 
 Cada vez que hayas modificado algo quiero que me modifiques el archivo .usoDeIA/logs.md y me pongas en un parrafo de maximo 4 lineas resumidamente que es lo que has modificado, también quiero que me pongas la fecha y la hora de la modificación. 
 El log seguirá el siguiente formato:
