@@ -126,3 +126,7 @@ Se ha implementado la funcionalidad de descarga en el botón "Descargar Ahora" d
 ## [2026-04-29 13:14]
 
 **Corrección de Anchura en Desktop (Component Hosts):** Se ha identificado que los componentes de Angular no ocupaban el 100% del ancho del contenedor en escritorio debido a las propiedades de Flexbox del contenedor de secciones. Se ha forzado la anchura completa (`w-100`) en los hosts de todos los componentes principales (Hero, Funciones, Vistazo, etc.), garantizando que elementos como el goteo de queso se extiendan hasta los bordes laterales de la pantalla.
+
+## [2026-04-29 14:20]
+
+**Refactorización Arquitectónica y Enrutado:** Se ha implementado un sistema de enrutado completo, moviendo el contenido principal a `PrincipalComponent` en `pages/component/principal`. Se ha limpiado `app.html` dejando solo el `router-outlet`. Se ha creado una página 404 personalizada (`NotFoundComponent`) con redirección al inicio. Además, se ha renombrado la carpeta `models` a `common` para una mejor organización de recursos compartidos.
