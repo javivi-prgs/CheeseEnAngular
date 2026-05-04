@@ -1,11 +1,33 @@
-<!-- Navegación Fija -->
-<app-header></app-header>
-
 <main class="snap-container">
 
     <!-- 1. Hero Section -->
     <section class="snap-section">
         <app-hero></app-hero>
+    </section>
+
+    <!-- Featured Products Dynamic Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Novedades en Cava</h2>
+                <p class="text-muted">Descubre nuestras últimas incorporaciones</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" *ngFor="let product of featuredProducts">
+                    <div class="card border-0 shadow-sm h-100 rounded-4 overflow-hidden">
+                        <img [src]="product.image" class="card-img-top" [alt]="product.name" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="fw-bold">{{product.name}}</h5>
+                            <p class="text-muted small">{{product.description | slice:0:60}}...</p>
+                            <a [routerLink]="['/producto', product.id]" class="btn btn-outline-primary btn-sm rounded-pill">Saber más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a routerLink="/catalogo" class="btn btn-primary btn-lg rounded-pill px-5">Ver Catálogo Completo</a>
+            </div>
+        </div>
     </section>
 
     <!-- 2. Funciones Section (Radar + Chat) -->
@@ -33,6 +55,3 @@
 
 <!-- Modal de Planes -->
 <app-planes></app-planes>
-
-<!-- Modal de Contacto -->
-<app-contacto></app-contacto>

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Queso Manchego Curado",
+    "description": "Queso de oveja con 12 meses de curación, sabor intenso y textura firme.",
+    "price": 24.50,
+    "image": "https://images.unsplash.com/photo-1486299267070-83823f5448dd?auto=format&fit=crop&q=80&w=800",
+    "category": "Curado",
+    "origin": "La Mancha, España"
+  },
+  {
+    "id": 2,
+    "name": "Gorgonzola Dolce",
+    "description": "Queso azul italiano cremoso, con vetas verdes y sabor dulce-picante.",
+    "price": 18.20,
+    "image": "https://images.unsplash.com/photo-1626957341926-98752fc2ba90?auto=format&fit=crop&q=80&w=800",
+    "category": "Azul",
+    "origin": "Lombardía, Italia"
+  },
+  {
+    "id": 3,
+    "name": "Brie de Meaux",
+    "description": "El 'Rey de los Quesos', de pasta blanda y corteza mohosa blanca.",
+    "price": 15.75,
+    "image": "https://images.unsplash.com/photo-1552767059-ce182ead6c1b?auto=format&fit=crop&q=80&w=800",
+    "category": "Blando",
+    "origin": "Isla de Francia, Francia"
+  },
+  {
+    "id": 4,
+    "name": "Cheddar Añejo",
+    "description": "Cheddar inglés tradicional, madurado durante 18 meses.",
+    "price": 21.00,
+    "image": "https://images.unsplash.com/photo-1618164435735-413d3b066c9a?auto=format&fit=crop&q=80&w=800",
+    "category": "Semicurado",
+    "origin": "Somerset, Reino Unido"
+  }
+]

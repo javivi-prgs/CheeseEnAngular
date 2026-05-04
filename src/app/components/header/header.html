@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-xl navbar-dark fixed-top custom-navbar">
     <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <a class="navbar-brand d-flex align-items-center gap-2" routerLink="/">
             <img src="/img/logo2.png" alt="Cheese Logo" class="nav-logo">
             <span class="brand-name fw-bold fs-4 text-white">Cheese</span>
         </a>
@@ -11,26 +11,29 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto align-items-center gap-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#planesModal">Planes</a>
+                    <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#features">Funciones</a>
+                    <a class="nav-link" routerLink="/catalogo" routerLinkActive="active">Catálogo</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactoModal">Contáctanos</a>
-                </li>
-                <!-- Botones Auth (Tarea 9) -->
-                <li class="nav-item">
-                    <button class="btn btn-auth" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar
-                        Sesión</button>
+                    <a class="nav-link" routerLink="/nosotros" routerLinkActive="active">Nosotros</a>
                 </li>
                 <li class="nav-item">
-                    <button class="btn btn-auth" data-bs-toggle="modal"
-                        data-bs-target="#registerModal">Registrarse</button>
+                    <a class="nav-link" routerLink="/contacto" routerLinkActive="active">Contacto</a>
                 </li>
-                <!-- Botón Descargar (Tarea 1) -->
+                <!-- Botones Auth -->
+                <li class="nav-item">
+                    <a class="btn btn-auth" routerLink="/login">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-auth" routerLink="/registro">Registrarse</a>
+                </li>
+                <!-- Botón Carrito/Pago -->
                 <li class="nav-item ms-xl-2">
-                    <a href="#download" class="btn btn-cheese rounded-pill px-4">Descargar</a>
+                    <a routerLink="/pago" class="btn btn-cheese rounded-pill px-4">
+                        <i class="bi bi-cart3"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -38,5 +41,4 @@
 </nav>
 
 <!-- Modales de Autenticación -->
-<app-register-modal></app-register-modal>
-<app-login-modal></app-login-modal>
+

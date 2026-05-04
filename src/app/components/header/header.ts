@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { RegisterModalComponent } from '../auth/register-modal/register-modal';
-import { LoginModalComponent } from '../auth/login-modal/login-modal';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RegisterModalComponent, LoginModalComponent],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './header.html',
   styleUrl: './header.css',
 })
