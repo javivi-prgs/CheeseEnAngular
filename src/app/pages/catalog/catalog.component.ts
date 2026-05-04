@@ -12,22 +12,22 @@ import { Product } from '../../models/product.model';
     <div class="catalog-container container py-5 animate__animated animate__fadeIn">
       <div class="text-center mb-5">
         <h1 class="display-4 fw-bold gradient-text">Nuestro Catálogo de Quesos</h1>
-        <p class="lead text-muted">Selección premium de los mejores quesos del mundo</p>
+        <p class="lead text-white-50">Selección premium de los mejores quesos del mundo</p>
       </div>
 
       <div class="row g-4">
         <div class="col-md-6 col-lg-3" *ngFor="let product of products">
-          <div class="card h-100 border-0 shadow-sm product-card">
+          <div class="card h-100 border-0 product-card">
             <div class="img-wrapper overflow-hidden">
               <img [src]="product.image" class="card-img-top" [alt]="product.name">
               <div class="category-badge">{{product.category}}</div>
             </div>
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">{{product.name}}</h5>
-              <p class="card-text text-muted small">{{product.description | slice:0:80}}...</p>
+              <h5 class="card-title fw-bold text-white">{{product.name}}</h5>
+              <p class="card-text text-white-50 small">{{product.description | slice:0:80}}...</p>
               <div class="mt-auto d-flex justify-content-between align-items-center">
                 <span class="price fw-bold fs-5 text-primary">{{product.price | currency:'EUR'}}</span>
-                <a [routerLink]="['/producto', product.id]" class="btn btn-outline-primary btn-sm rounded-pill px-3">
+                <a [routerLink]="['/producto', product.id]" class="btn btn-outline-primary btn-sm rounded-pill px-3 btn-cheese-link">
                   Ver detalles
                 </a>
               </div>
@@ -39,17 +39,21 @@ import { Product } from '../../models/product.model';
   `,
   styles: [`
     .gradient-text {
-      background: linear-gradient(45deg, #f59e0b, #d97706);
+      background: linear-gradient(45deg, var(--primary, #FFD700), var(--primary-dark, #FFA500));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     .product-card {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: var(--bg-card, rgba(30, 30, 30, 0.6));
+      border: 1px solid var(--glass-border, rgba(255, 255, 255, 0.08)) !important;
+      backdrop-filter: blur(20px);
+      transition: var(--transition, all 0.4s cubic-bezier(0.16, 1, 0.3, 1));
       border-radius: 15px;
     }
     .product-card:hover {
+      border-color: var(--primary, #FFD700) !important;
       transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+      box-shadow: 0 0 35px rgba(255, 215, 0, 0.15) !important;
     }
     .img-wrapper {
       height: 200px;
@@ -70,12 +74,22 @@ import { Product } from '../../models/product.model';
       position: absolute;
       top: 10px;
       right: 10px;
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(5px);
       padding: 4px 12px;
       border-radius: 20px;
       font-size: 0.75rem;
       font-weight: bold;
-      color: #b45309;
+      color: var(--primary, #FFD700);
+    }
+    .btn-cheese-link {
+      color: var(--primary, #FFD700) !important;
+      border-color: var(--primary, #FFD700) !important;
+    }
+    .btn-cheese-link:hover {
+      background-color: var(--primary, #FFD700) !important;
+      color: var(--bg-dark, #0a0a0a) !important;
     }
   `]
 })
@@ -89,3 +103,4 @@ export class CatalogComponent implements OnInit {
     });
   }
 }
+
